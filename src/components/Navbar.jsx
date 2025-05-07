@@ -6,7 +6,7 @@ import './Navbar.css';
 function Navbar() {
   return (
     <div className='navbar' >
-        <Link to="/" style={{ marginRight: '1rem' }}>Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/form">Plan Trip</Link>
     </div>
   );
