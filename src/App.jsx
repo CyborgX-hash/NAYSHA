@@ -12,10 +12,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/form" element={<FormPage />} />
-        <Route path="/results" element={<ResultsPage />} />
+        <Route path='results' element={<ResultsPage/>}/>
       </Routes>
     </Router>
   );
+   
 }
 
 export default App;

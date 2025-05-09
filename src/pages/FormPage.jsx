@@ -4,7 +4,7 @@ import './FormPage.css';
 
 
 function FormPage() {
-  const [formData, setFormData] = useState({ interest: '', season: '', budget: '' });
+  const [formData, setFormData] = useState({ interest:'',season:'',budget:''});
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -25,10 +25,10 @@ function FormPage() {
           <select name="interest" value={formData.interest} onChange={handleChange} required>
             <option value="">Select Your Intrest</option>
             <option value="beach">Beach</option>
-            <option value="mountains">Mountains</option>
+            <option value="mountains">mountains</option>
             <option value="heritage">Cities</option>
           </select>
-        </label><br /><br />
+        </label><br/><br />
         <label>
           Season:
           <select name="season" value={formData.season} onChange={handleChange} required>
