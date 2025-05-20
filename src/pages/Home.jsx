@@ -17,7 +17,7 @@ function Home() {
         </video>
 
         <div className="overlay">
-          <h1>Welcome to Travel Recommender</h1>
+          <h1>WELCOME TO NAYSHA</h1>
           <button onClick={() => navigate('/form')}>
             Get Started
           </button>

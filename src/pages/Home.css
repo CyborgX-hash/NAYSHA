@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -33,17 +35,24 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: white;
     text-shadow: 1px 1px 3px #000;
-    background: rgba(0, 0, 0, 0.3); /* Slight overlay */
+    background: rgba(0, 0, 0, 0.3); 
     padding: 2rem;
+    
   }
   
   .overlay h1 {
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.1rem;
+    line-height: 0.rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0.1rem;
+    line-height: 1.2;
+
+
   }
   
   .overlay button {
