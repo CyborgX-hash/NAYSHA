@@ -13,7 +13,7 @@
       "interests": ["Beach", "nightlife", "nature"],
       "seasons": ["winter", "summer"],
       "description": "Relax by the beach and party under the stars.",
-      "image": "/images/goa.jpg"
+      "image": "/images/goa.jpeg"
     },
     {
       "name": "Jaipur, India",
@@ -94,21 +94,7 @@
       "seasons": ["summer"],
       "description": "High altitude deserts, monasteries, and biking trails.",
       "image": "/images/leh.jpeg"
-    },
-    {
-      "name": "pix, India",
-      "budget": 25000,
-      "interests": ["mountains", "adventure", "spiritual"],
-      "seasons": ["summer"],
-      "description": "High altitude deserts, monasteries, and biking trails.",
-      "image": "/images/leh.jpeg"
-    },{
-      "name": "Leh-Ladakh, India",
-      "budget": 25000,
-      "interests": ["mountains", "adventure", "spiritual"],
-      "seasons": ["summer"],
-      "description": "High altitude deserts, monasteries, and biking trails.",
-      "image": "/images/leh.jpeg"
     }
+    
   ]
   
