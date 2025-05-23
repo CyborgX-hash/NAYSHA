@@ -37,6 +37,8 @@
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
+    margin-right: 30px;
+
   }
   
   .login-form button {

@@ -31,12 +31,13 @@
   }
   
   .signup-form input {
-    width: 100%;
+    width: 87%;
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
+    margin-right: 30px;
   }
   
   .signup-form button {

@@ -1,100 +1,98 @@
 [
-    {
-      "name": "Manali, India",
-      "budget": 15000,
-      "interests": ["mountains", "nature", "adventure"],
-      "seasons": ["summer", "winter"],
-      "description": "Snowy hills, perfect for hiking and skiing.",
-      "image": "/images/manali.jpg"
-    },
-    {
-      "name": "Goa, India",
-      "budget": 20000,
-      "interests": ["Beach", "nightlife", "nature"],
-      "seasons": ["winter", "summer"],
-      "description": "Relax by the beach and party under the stars.",
-      "image": "/images/goa.jpeg"
-    },
-    {
-      "name": "Jaipur, India",
-      "budget": 12000,
-      "interests": ["heritage", "culture"],
-      "seasons": ["winter"],
-      "description": "Explore royal forts and historic architecture.",
-      "image": "/images/jaipur.jpg"
-    },
-    {
-      "name": "Darjeeling, India",
-      "budget": 14000,
-      "interests": ["mountains", "tea", "culture"],
-      "seasons": ["summer", "monsoon"],
-      "description": "Misty hills, scenic views, and tea gardens.",
-      "image": "images/darjeeling.jpeg"
-    },
-    {
-      "name": "Rishikesh, India",
-      "budget": 13000,
-      "interests": ["adventure", "spiritual", "nature"],
-      "seasons": ["winter", "summer"],
-      "description": "Yoga capital and a hotspot for river rafting.",
-      "image": "/images/rishikesh.jpg"
-    },
-    {
-      "name": "Bali, Indonesia",
-      "budget": 45000,
-      "interests": ["beaches", "nature", "culture"],
-      "seasons": ["summer", "monsoon"],
-      "description": "Tropical beaches, temples, and vibrant culture.",
-      "image": "/images/bali.jpg"
-    },
-    {
-      "name": "Paris, France",
-      "budget": 90000,
-      "interests": ["heritage", "culture", "romantic"],
-      "seasons": ["summer", "winter"],
-      "description": "The city of love, art, and iconic monuments.",
-      "image": "/images/paris.jpg"
-    },
-    {
-      "name": "Tokyo, Japan",
-      "budget": 100000,
-      "interests": ["culture", "technology", "food"],
-      "seasons": ["spring", "autumn"],
-      "description": "Futuristic cities, cherry blossoms, and sushi.",
-      "image": "/images/tokyo.jpg"
-    },
-    {
-      "name": "Dubai, UAE",
-      "budget": 60000,
-      "interests": ["luxury", "shopping", "modern"],
-      "seasons": ["winter"],
-      "description": "Modern architecture, desert safaris, and luxury.",
-      "image": "/images/dubai.jpg"
-    },
-    {
-      "name": "New York City, USA",
-      "budget": 110000,
-      "interests": ["urban", "food", "entertainment"],
-      "seasons": ["winter", "summer"],
-      "description": "Iconic skyline, Broadway shows, and diversity.",
-      "image": "/images/nyc.jpg"
-    },
-    {
-      "name": "Singapore",
-      "budget": 70000,
-      "interests": ["modern", "clean", "family"],
-      "seasons": ["summer", "autumn"],
-      "description": "Futuristic city with gardens, shopping, and safety.",
-      "image": "/images/singapore.jpg"
-    },
-    {
-      "name": "Leh-Ladakh, India",
-      "budget": 25000,
-      "interests": ["mountains", "adventure", "spiritual"],
-      "seasons": ["summer"],
-      "description": "High altitude deserts, monasteries, and biking trails.",
-      "image": "/images/leh.jpeg"
-    }
-    
-  ]
-  
+  {
+    "name": "Manali, India",
+    "budget": 15000,
+    "interests": ["mountains", "nature", "adventure"],
+    "seasons": ["summer", "winter"],
+    "description": "Snowy hills, perfect for hiking and skiing.",
+    "image": "/images/manali.jpg"
+  },
+  {
+    "name": "Goa, India",
+    "budget": 20000,
+    "interests": ["beach", "nightlife", "nature"],
+    "seasons": ["winter", "summer"],
+    "description": "Relax by the beach and party under the stars.",
+    "image": "/images/goa.jpeg"
+  },
+  {
+    "name": "Jaipur, India",
+    "budget": 12000,
+    "interests": ["heritage", "culture"],
+    "seasons": ["winter", "summer", "monsoon"],
+    "description": "Explore royal forts and historic architecture.",
+    "image": "/images/jaipur.jpg"
+  },
+  {
+    "name": "Darjeeling, India",
+    "budget": 14000,
+    "interests": ["mountains", "tea", "culture"],
+    "seasons": ["summer", "winter"],
+    "description": "Misty hills, scenic views, and tea gardens.",
+    "image": "images/darjeeling.jpeg"
+  },
+  {
+    "name": "Rishikesh, India",
+    "budget": 13000,
+    "interests": ["adventure", "spiritual", "mountains"],
+    "seasons": ["winter", "summer", "monsoon"],
+    "description": "Yoga capital and a hotspot for river rafting.",
+    "image": "/images/rishikesh.jpeg"
+  },
+  {
+    "name": "Bali, Indonesia",
+    "budget": 45000,
+    "interests": ["beach", "nature", "culture"],
+    "seasons": ["summer", "winter", "monsoon"],
+    "description": "Tropical beaches, temples, and vibrant culture.",
+    "image": "/images/bali.jpeg"
+  },
+  {
+    "name": "Paris, France",
+    "budget": 90000,
+    "interests": ["heritage", "cities", "romantic"],
+    "seasons": ["summer", "winter"],
+    "description": "The city of love, art, and iconic monuments.",
+    "image": "/images/paris.jpg"
+  },
+  {
+    "name": "Tokyo, Japan",
+    "budget": 100000,
+    "interests": ["culture", "cities", "food"],
+    "seasons": ["summer", "winter"],
+    "description": "Futuristic cities, cherry blossoms, and sushi.",
+    "image": "/images/tokyo.jpeg"
+  },
+  {
+    "name": "Dubai, UAE",
+    "budget": 60000,
+    "interests": ["luxury", "cities", "modern"],
+    "seasons": ["winter", "summer", "monsoon"],
+    "description": "Modern architecture, desert safaris, and luxury.",
+    "image": "/images/dubai.avif"
+  },
+  {
+    "name": "New York City, USA",
+    "budget": 110000,
+    "interests": ["cities", "food", "entertainment"],
+    "seasons": ["winter", "summer"],
+    "description": "Iconic skyline, Broadway shows, and diversity.",
+    "image": "/images/nyc.jpg"
+  },
+  {
+    "name": "Singapore",
+    "budget": 70000,
+    "interests": ["modern", "cities", "family"],
+    "seasons": ["summer", "winter"],
+    "description": "Futuristic city with gardens, shopping, and safety.",
+    "image": "/images/singapore.jpg"
+  },
+  {
+    "name": "Leh-Ladakh, India",
+    "budget": 25000,
+    "interests": ["mountains", "adventure", "spiritual"],
+    "seasons": ["summer"],
+    "description": "High altitude deserts, monasteries, and biking trails.",
+    "image": "/images/leh.jpeg"
+  }
+]

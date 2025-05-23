@@ -7,9 +7,11 @@ function ResultsPage() {
   const { state } = useLocation();
   const { interest, season, budget } = state;
 
+  console.log('Received state:', state); 
+
   const matchedDestinations = destinations.filter(dest => 
-    dest.interests.includes(interest.toLowerCase()) &&
-    dest.seasons.includes(season.toLowerCase()) &&
+    dest.interests.map(i => i.toLowerCase()).includes(interest.toLowerCase()) &&
+    dest.seasons.map(s => s.toLowerCase()).includes(season.toLowerCase()) &&
     Number(budget) >= dest.budget
   );
 

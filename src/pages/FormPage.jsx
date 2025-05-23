@@ -23,11 +23,15 @@ function FormPage() {
         <label>
           Interest:
           <select name="interest" value={formData.interest} onChange={handleChange} required>
-            <option value="">Select Your Intrest</option>
+            <option value="">Select Your Interest</option>
             <option value="beach">Beach</option>
-            <option value="mountains">mountains</option>
-            <option value="heritage">Cities</option>
+            <option value="mountains">Mountains</option>
+            <option value="heritage">Heritage</option>
+            <option value="culture">Culture</option>
+            <option value="cities">Cities</option>
+            <option value="adventure">Adventure</option>
           </select>
+
         </label><br/><br />
         <label>
           Season:
