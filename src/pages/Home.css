@@ -152,12 +152,11 @@ html, body {
   color: white;
   font-family: 'Poppins', sans-serif;
   margin-right: 40rem;
-  border: 2px solid white;
   border-radius: 40px;
   padding: 20px;
   width: 80%;
-  
 }
+
 .about h2 {
   margin-bottom: 20px;
   color: white;
@@ -175,7 +174,6 @@ html, body {
 .contact{
   color:black;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
   
 }
 .contact h2 {
@@ -183,6 +181,7 @@ html, body {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
+  text-align: center;
 }
 .contact p{
   margin: 0 auto;
@@ -191,6 +190,14 @@ html, body {
   max-width: 800px;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  margin-left: 12rem;
+}
+.footer p {
+  font-size: 16px;
+  background-color: #333;
+  font-family: 'Poppins', sans-serif;
+  width: 100%
+  ;
 }
 
 
