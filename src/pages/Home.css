@@ -139,5 +139,58 @@ html, body {
   font-family: 'Poppins', sans-serif;
   position: relative;
   bottom: 0;
+
 }
+.footer p{
+  margin-right: 74rem;
+  font-size: 16px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+
+}
+/* .animated-about {
+  background: linear-gradient(to right, #e0f7fa, #fdfdfd);
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  max-width: 100%;
+  opacity: 0;
+  transform: scale(0.9) translateY(50px);
+  animation: revealBounce 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.3s;
+}
+
+.animated-about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #0077b6;
+}
+
+.animated-about p {
+  
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #444;
+} */
+.about{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 40rem;
+
+
+}
+.about h2 {
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+}
+.about p {
+  margin: 0 auto;
+  line-height: 1.7;
+  color: white;
+  max-width: 800px;
+}
+
 

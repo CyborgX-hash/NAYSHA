@@ -60,23 +60,18 @@ function Home() {
           <p>Tropical beaches, temples, and vibrant culture.</p>
         </div>
         </div>
+        <div className="about">
+          <h2>About NAYSHA</h2>
+          <p>
+            NAYSHA is your smart travel companion that helps you discover amazing places based on your budget. 
+            Just enter how much you’re willing to spend, and we’ll recommend destinations that match your needs. 
+            Simple, fast, and budget-friendly — travel planning made easy!
+          </p>
+        </div>
+
         
       </div>
-      <div className="footer">
-        <p>© 2023 Naysha. All rights reserved.</p>
-        <p>Follow us on social media!</p>
-        <div className="social-icons">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <img src="/images/facebook.png" alt="Facebook" />
-          </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src="/images/instagram.png" alt="Instagram" />
-          </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-            <img src="/images/twitter.png" alt="Twitter" />
-          </a>
-          </div>
-      </div>
+      
 
     </div>
   );

@@ -11,6 +11,7 @@ function Navbar() {
       <div className='links'>
       <Link to="/">Home</Link>
       <Link to="/form">Plan Trip</Link>
+      
       </div>
       <div className='login'>
       <Link to="/login">Login</Link>
