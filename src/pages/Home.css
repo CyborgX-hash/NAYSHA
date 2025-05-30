@@ -194,10 +194,13 @@ html, body {
 }
 .footer p {
   font-size: 16px;
-  background-color: #333;
+ color:white;
   font-family: 'Poppins', sans-serif;
   width: 100%
   ;
+}
+.footer{
+  background-color: #333;
 }
 
 
