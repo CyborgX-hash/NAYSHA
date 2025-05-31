@@ -67,20 +67,25 @@ function Home() {
             Just enter how much you’re willing to spend, and we’ll recommend destinations that match your needs. 
             Simple, fast, and budget-friendly — travel planning made easy!
           </p>
+          
           <h2>CONTACT US</h2>
           <p>Email :- Naysha713@gmail.com</p>
-          <p className='ph'>Ph No.:-  8828 1570 7021</p>
+          <p>Ph No.:-  8828 1570 7021</p>
           <p>Location :- Newton School Of Technology Delhi NCR.</p>
+          
         </div>
         <div className='footer'>
+          <h2>Follow Us</h2>
+          <a href='https://www.instagram.com/'><img src='/images/insta.png' alt='insta'/></a>
+          <a href='https://www.youtube.com/'><img src='/images/yt.png' alt='youtube'/></a>
+
           <p>© 2025 Naysha.All Rights Reserved.</p>
         </div>
-
-        
+        <div>
+      <p style={{color:"white",backgroundColor:'#333'}}>Made By Saksham</p>
       </div>
-      
-
-    </div>
+        </div>
+  </div>
   );
 }
 
