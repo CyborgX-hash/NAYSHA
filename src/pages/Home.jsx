@@ -82,7 +82,7 @@ function Home() {
           <p>© 2025 Naysha.All Rights Reserved.</p>
         </div>
         <div>
-      <p style={{color:"white",backgroundColor:'#333'}}>Made By Saksham</p>
+      <p style={{color:"white",backgroundColor:'#333',fontFamily: 'Poppins',}}>Made By Saksham</p>
       </div>
         </div>
   </div>
