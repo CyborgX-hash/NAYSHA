@@ -5,7 +5,6 @@ import "./Signup.css";
 const Signup = () => {
   const navigate = useNavigate();
 
-  // State to track form inputs
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,7 +13,6 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic validation example
     if (!name || !email || !password || !confirmPassword) {
       alert("Please fill all fields");
       return;
@@ -24,8 +22,7 @@ const Signup = () => {
       return;
     }
 
-    // Here you would normally send data to backend and handle response
-    // For now, just navigate to home page on successful signup
+    
     navigate("/");
   };
 
