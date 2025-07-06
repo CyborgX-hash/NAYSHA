@@ -213,5 +213,57 @@ html, body {
   color: #aaa;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .overlay button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay button {
+    font-size: 0.8rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .item img {
+    height: 180px;
+  }
+
+  .item-overlay h2 {
+    font-size: 1rem;
+  }
+
+  .item-overlay p {
+    font-size: 0.8rem;
+  }
+}
 
 
