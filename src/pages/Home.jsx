@@ -65,8 +65,7 @@ function Home() {
         <div className="footer-bottom">
           <div className="social-icons">
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><img src="/images/insta.png" alt="Instagram" /></a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><img src="/images/facebook.png" alt="Facebook" /></a>
-            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer"><img src="/images/yt.png" alt="Twitter" /></a>
+            <a href="https://www.youtube.com/watch?v=UGs3qQ9uZbw&list=RDUGs3qQ9uZbw&start_radio=1" target="_blank" rel="noreferrer"><img src="/images/yt.png" alt="Youtube" /></a>
           </div>
           <p>© 2025 Naysha. All Rights Reserved.</p>
           <p>Made By Saksham</p>
