@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { auth } from "./firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import "./Login.css";
 
 const Login = () => {
@@ -9,15 +11,15 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
 
-    if (email && password) {
-      // For now, just navigate to home after login
-      navigate("/");
-    } else {
-      setError("Please fill all fields");
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      navigate("/"); // Redirect to home
+    } catch (err) {
+      setError(err.message);
     }
   };
 
