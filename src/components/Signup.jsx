@@ -28,7 +28,7 @@ const Signup = () => {
 
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      navigate("/"); // redirect to home on success
+      navigate("/"); 
     } catch (err) {
       if (err.code === "auth/email-already-in-use") {
         setError("This email is already registered. Please log in instead.");

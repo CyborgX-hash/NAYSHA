@@ -23,16 +23,14 @@ function App() {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>; // you can replace with spinner
+    return <p>Loading...</p>; 
   }
 
   return (
     <Router>
-      {/* Show Navbar only if logged in */}
       {user && <Navbar />}
 
       <Routes>
-        {/* Public routes */}
         <Route
           path="/login"
           element={!user ? <Login /> : <Navigate to="/" replace />}
@@ -42,7 +40,6 @@ function App() {
           element={!user ? <Signup /> : <Navigate to="/" replace />}
         />
 
-        {/* Protected routes */}
         <Route
           path="/"
           element={
