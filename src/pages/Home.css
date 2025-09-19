@@ -1,18 +1,21 @@
-
+/* Reset */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Main container */
 .home {
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: #111;
 }
 
+/* Background video */
 .video-container {
   position: relative;
   width: 100vw;
@@ -28,8 +31,10 @@ html, body {
   top: 0;
   left: 0;
   z-index: 1;
+  filter: brightness(0.8);
 }
 
+/* Overlay section */
 .overlay {
   position: relative;
   z-index: 2;
@@ -39,103 +44,127 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  padding: 0 20px;
+}
+
+.overlay h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.overlay button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+}
+
+.overlay button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(118, 75, 162, 0.55);
+}
+
+/* Section title */
+.destination {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 
+
+.hero-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+/* Destination container */
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2%;
-  padding: 50px;
-  background: white; 
-  z-index: 1;
   gap: 40px;
+  padding: 40px;
   justify-content: center;
-  background-color: #333;
+  /* background-color: #1a1a1a; */
 }
 
+/* Destination card */
 .item {
   position: relative;
-  width: 25%;
+  width: 280px;
   height: 220px;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
- 
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
+
+.item:hover {
+  transform: scale(1.05);
+}
+
 .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 8px;
+  border-radius: 12px;
 }
-.overlay button {
-  background-color: skyblue;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top:8px;
-  font-family: 'Poppins', sans-serif;
-  transition: background-color 0.3s ease;
-  font-size: 20px;
 
-}
-.destination{
-  font-size: 20px;
-  margin-top: 20px;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-
-}
+/* Card overlay */
 .item-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); 
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 16px;
-  font-family: 'Poppins', sans-serif;
+  padding: 20px;
   font-size: 14px;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: background 0.3s ease;
 }
 
 .item-overlay h2 {
-  margin: 0 0 4px;
+  margin: 0 0 8px;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .item-overlay p {
-  margin: 0 0 4px;
+  margin: 0;
   font-size: 14px;
+  opacity: 0.85;
 }
 
-.item-overlay span {
-  font-size: 13px;
-  opacity: 0.8;
-}
-.item:hover .item-overlay {
-  background: rgba(0, 0, 0, 0.6);
-}
+/* Footer */
 .modern-footer {
-  background-color: #242424;
+  background: #111;
   color: white;
   padding: 60px 20px 20px;
-  font-family: 'Poppins', sans-serif;
   margin-top: 60px;
 }
 
@@ -166,6 +195,7 @@ html, body {
 .footer-right h2 {
   font-size: 24px;
   margin-bottom: 15px;
+  color: #667eea;
 }
 
 .footer-left p,
@@ -178,14 +208,10 @@ html, body {
   gap: 10px;
 }
 
-.footer-right svg {
-  color: #00bcd4;
-}
-
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
-  border-top: 1px solid #444;
+  border-top: 1px solid #333;
   padding-top: 20px;
 }
 
@@ -199,13 +225,14 @@ html, body {
 }
 
 .social-icons img {
-  width: 42px;
-  height: 42px;
-  transition: transform 0.3s ease;
+  width: 38px;
+  height: 38px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .social-icons img:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .footer-bottom p {
@@ -213,44 +240,42 @@ html, body {
   color: #aaa;
   font-size: 14px;
 }
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .overlay h1 {
     font-size: 2.2rem;
   }
 
   .overlay button {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
   }
 
   .container {
     padding: 1rem;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .item {
     width: 90%;
   }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-left,
-  .footer-right {
-    width: 100%;
-  }
 }
 
 @media (max-width: 480px) {
   .overlay h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .overlay button {
-    font-size: 0.8rem;
-    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.4rem;
   }
 
   .item img {
@@ -262,8 +287,6 @@ html, body {
   }
 
   .item-overlay p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 }
-
-

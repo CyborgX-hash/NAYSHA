@@ -1,64 +1,77 @@
+/* Navbar container */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    padding: 10px 40px;
-  }
-  
-  .logo {
-    flex: 1;
-  }
-  
-  .links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .login {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 50px solid black;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    margin-left: 20px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-  
-  .logo img {
-    height: 50px;
-    width: 150px;
-  }
-  .login a {
-    padding: 8px 16px;
-    margin-left: 10px;
-    border: 2px solid white;
-    border-radius: 6px;
-    background-color: transparent;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .login a:hover {
-    background-color:lightblue;
-    color: #333;
-  }
-  
-  
-  
-  
-  
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1A202C;
+  padding: 12px 40px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo img {
+  height: 45px;
+  width: auto;
+}
+
+/* Middle links */
+.links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.3s ease;
+}
+
+.links a:hover {
+  color: #764ba2;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+/* Login/Signup buttons */
+.login {
+  display: flex;
+  gap: 12px;
+}
+
+.login a {
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.login a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

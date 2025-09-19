@@ -7,14 +7,17 @@ const Login = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+    setError("");
+
     if (email && password) {
-      navigate("/");  
+      // For now, just navigate to home after login
+      navigate("/");
     } else {
-      alert("Please fill all fields");
+      setError("Please fill all fields");
     }
   };
 
@@ -22,7 +25,9 @@ const Login = () => {
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit}>
         <h2>Login to Your Account</h2>
-        
+
+        {error && <p style={{ color: "red" }}>{error}</p>}
+
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -45,7 +50,9 @@ const Login = () => {
 
         <button type="submit">Login</button>
 
-        <p className="signup-link">Don't have an account? <a href="/signup">Sign up</a> </p>
+        <p className="signup-link">
+          {"Don't have an account? "} <a href="/signup">Sign up</a>
+        </p>
       </form>
     </div>
   );

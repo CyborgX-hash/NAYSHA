@@ -15,9 +15,7 @@ function Home() {
 
         <div className="overlay">
           <h1>WELCOME TO NAYSHA</h1>
-          <button onClick={() => navigate('/form')}>
-            Get Started
-          </button>
+          
         </div>
       </div>
 
@@ -27,11 +25,12 @@ function Home() {
 
       <div className="container">
         {[
-          { img: '/images/goa.jpeg', title: 'Goa, India', desc: 'Beaches, parties & seafood' },
           { img: '/images/darjeeling.jpeg', title: 'Darjeeling, India', desc: 'Misty hills, scenic views, and tea gardens.' },
           { img: '/images/manali.jpg', title: 'Manali, India', desc: 'Snowy hills, perfect for hiking and skiing.' },
           { img: '/images/leh.jpeg', title: 'Leh-Ladakh, India', desc: 'High altitude deserts, monasteries, and biking trails.' },
           { img: '/images/paris.jpg', title: 'Paris, France', desc: 'The city of love, art, and iconic monuments.' },
+          { img: '/images/goa.jpeg', title: 'Goa, India', desc: 'Beaches, parties & seafood' },
+
           { img: '/images/bali.jpeg', title: 'Bali, Indonesia', desc: 'Tropical beaches, temples, and vibrant culture.' }
         ].map((place, i) => (
           <div className="item" key={i}>
@@ -51,7 +50,7 @@ function Home() {
             <p>
               NAYSHA is your smart travel companion that helps you discover amazing places
               based on your budget. Just enter how much you’re willing to spend, and we’ll
-              recommend destinations that match your needs. Simple, fast, and budget-friendly —
+              recommend destinations that match your needs. Simple, fast, and budget-friendly 
               travel planning made easy!
             </p>
           </div>
