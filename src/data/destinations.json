@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Manali, India",
     "budget": 15000,
     "interests": ["mountains", "nature", "adventure"],
@@ -8,6 +9,7 @@
     "image": "/images/manali.jpg"
   },
   {
+    "id": 2,
     "name": "Goa, India",
     "budget": 20000,
     "interests": ["beach", "nightlife", "nature"],
@@ -16,6 +18,7 @@
     "image": "/images/goa.jpeg"
   },
   {
+    "id": 3,
     "name": "Jaipur, India",
     "budget": 12000,
     "interests": ["heritage", "culture"],
@@ -24,14 +27,16 @@
     "image": "/images/jaipur.jpg"
   },
   {
+    "id": 4,
     "name": "Darjeeling, India",
     "budget": 14000,
     "interests": ["mountains", "tea", "culture"],
     "seasons": ["summer", "winter"],
     "description": "Misty hills, scenic views, and tea gardens.",
-    "image": "images/darjeeling.jpeg"
+    "image": "/images/darjeeling.jpeg"
   },
   {
+    "id": 5,
     "name": "Rishikesh, India",
     "budget": 13000,
     "interests": ["adventure", "spiritual", "mountains"],
@@ -40,6 +45,7 @@
     "image": "/images/rishikesh.jpeg"
   },
   {
+    "id": 6,
     "name": "Bali, Indonesia",
     "budget": 45000,
     "interests": ["beach", "nature", "culture"],
@@ -48,6 +54,7 @@
     "image": "/images/bali.jpeg"
   },
   {
+    "id": 7,
     "name": "Paris, France",
     "budget": 90000,
     "interests": ["heritage", "cities", "romantic"],
@@ -56,6 +63,7 @@
     "image": "/images/paris.jpg"
   },
   {
+    "id": 8,
     "name": "Tokyo, Japan",
     "budget": 100000,
     "interests": ["culture", "cities", "food"],
@@ -64,6 +72,7 @@
     "image": "/images/tokyo.jpeg"
   },
   {
+    "id": 9,
     "name": "Dubai, UAE",
     "budget": 60000,
     "interests": ["luxury", "cities", "modern"],
@@ -72,6 +81,7 @@
     "image": "/images/dubai.avif"
   },
   {
+    "id": 10,
     "name": "New York City, USA",
     "budget": 110000,
     "interests": ["cities", "food", "entertainment"],
@@ -80,6 +90,7 @@
     "image": "/images/nyc.jpg"
   },
   {
+    "id": 11,
     "name": "Singapore",
     "budget": 70000,
     "interests": ["modern", "cities", "family"],
@@ -88,6 +99,7 @@
     "image": "/images/singapore.jpg"
   },
   {
+    "id": 12,
     "name": "Leh-Ladakh, India",
     "budget": 25000,
     "interests": ["mountains", "adventure", "spiritual"],
