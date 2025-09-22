@@ -14,8 +14,7 @@ function Navbar() {
         <Link to="/form">Plan Trip</Link>
       </div>
       <div className='login'>
-        <Link to="/login">Login</Link>
-        <Link to="/signup">SignUp</Link>
+        
         <Link to="/wishlist">🤍</Link>
         
 
