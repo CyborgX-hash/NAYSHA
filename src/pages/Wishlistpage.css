@@ -1,86 +1,104 @@
 .results-container {
-    padding: 30px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .results-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 25px;
-    color: #333;
-  }
-  
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 20px;
-  }
-  
-  .destination-card {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .destination-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-image {
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    position: relative;
-  }
-  
-  .card-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-    padding: 12px;
-    color: #fff;
-  }
-  
-  .card-overlay h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  .card-overlay p {
-    margin: 4px 0;
-    font-size: 0.9rem;
-  }
-  
-  .card-overlay button {
-    margin-top: 10px;
-    padding: 8px 14px;
-    border: none;
-    border-radius: 8px;
-    background: #ff4d4d;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-    width: 100px;
-  }
-  
-  .card-overlay button:hover {
-    background: #e60000;
-  }
-  
-  .results-empty {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #777;
-    margin-top: 50px;
-  }
-  
+  padding: 3rem 2rem;
+  max-width: 1400px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.results-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Inherit consistent card styles */
+.destination-card {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+.card-image {
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.95), transparent);
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.card-overlay h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.card-overlay p {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+
+.card-overlay button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--border-radius-round);
+  background: rgba(239, 68, 68, 0.9);
+  /* Red for delete */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: auto;
+  font-size: 0.9rem;
+  backdrop-filter: blur(4px);
+}
+
+.card-overlay button:hover {
+  background: #ef4444;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+.results-empty {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  margin-top: 4rem;
+  background: var(--glass-bg);
+  padding: 3rem;
+  border-radius: var(--border-radius-lg);
+  border: 1px dashed var(--glass-border);
+}

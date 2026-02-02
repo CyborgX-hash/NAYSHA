@@ -1,128 +1,140 @@
+/* Glassmorphism Navbar */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1A202C;
-  padding: 12px 40px;
-  font-family: "Poppins", sans-serif;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 1rem 3rem;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: var(--glass-shadow);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+  transition: all 0.3s ease;
 }
 
 .logo img {
-  height: 45px;
+  height: 50px;
   width: auto;
+  filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.5));
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
 }
 
 .links {
   flex: 1;
   display: flex;
   justify-content: center;
-  gap: 28px;
+  gap: 3rem;
 }
 
 .links a {
-  color: white;
+  color: var(--text-primary);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   position: relative;
+  letter-spacing: 0.5px;
   transition: color 0.3s ease;
 }
 
 .links a::after {
   content: "";
   position: absolute;
-  bottom: -4px;
-  left: 0;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 0%;
   height: 2px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  transition: width 0.3s ease;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 2px;
 }
 
-
+.links a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
 
 .links a:hover::after {
   width: 100%;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
 }
 
 .login {
   display: flex;
-  gap: 12px;
+  gap: 1rem;
 }
 
 .login a {
-  padding: 8px 18px;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  color: #fff;
-  font-size: 14px;
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--border-radius-round);
+  font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.login a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* Signup Button Variant */
+.login a:last-child {
+  background: var(--gradient-primary);
+  color: white;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 }
+
+.login a:last-child:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+}
+
+/* Login Button Variant */
+.login a:first-child {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login a:first-child:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
+/* Mobile Responsive */
 @media screen and (max-width: 1024px) {
   .navbar {
-    padding: 12px 20px;
+    padding: 1rem 1.5rem;
   }
 
   .links {
-    gap: 20px;
-  }
-
-  .links a {
-    font-size: 15px;
-  }
-
-  .login a {
-    padding: 7px 16px;
-    font-size: 13px;
+    gap: 1.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
+    padding: 1rem;
+    gap: 1rem;
   }
 
   .links {
-    flex: 1;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 8px;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
   }
 
   .login {
-    margin-top: 8px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .navbar {
-    padding: 8px 12px;
-  }
-
-  .links {
-    gap: 10px;
-  }
-
-  .links a {
-    font-size: 14px;
-  }
-
-  .login a {
-    padding: 6px 12px;
-    font-size: 12px;
+    width: 100%;
+    justify-content: center;
   }
 }
